@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 70px;
+    height: 85px;
     background: #999;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 export const LefSide = styled.div`
     width: 70%;
-    height: 70px;
+    height: 85px;
     background: #FFFFFF;
     align-items: center;
     padding-top: 0px;
@@ -24,7 +24,7 @@ export const LefSide = styled.div`
 `
 export const RightSide = styled.div`
     width: 30%;
-    height: 70px;
+    height: 85px;
     align-items: center;
     background: #FFFFFF;
     justify-content: flex-end;
