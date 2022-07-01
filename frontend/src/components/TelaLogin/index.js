@@ -1,9 +1,34 @@
-import React, { Suspense } from "react";
+import React, { useState, useContext } from "react";
 import * as S from './style';
-import tela from '../../assets/tela.png'
+import api from '../../services/api'
+import { useNavigate } from 'react-router-dom'
+import { UserContext } from "../../Context/UserContext";
+
 
 function TelaLogin(){
+
+    const {userData, setUserData} = useContext()
+
+
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+
+    async function loginHandler(e){
+        e.preventDefault()
+        try{
+            const response = await api.post('session',{
+                email,
+                password
+            }) 
+        console.log(response.data)
+        setUserData({email: response.data.email , isLogged: true})
+        }catch(err){
+            alert('Falha no login')
+        }
+    }
+    
     return (
+        
         <S.Container>
             <S.LeftSide>
 
@@ -17,7 +42,12 @@ function TelaLogin(){
                         <label>
                             Email
                         </label>
-                        <input type="email" placeholder="Exemplo@email.com"/>
+                        <input 
+                            type="email" 
+                            placeholder="Exemplo@email.com"
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                        />
                     </S.Email>
                     <S.Senha>
                         <S.SenhaEsquerda>
@@ -26,14 +56,19 @@ function TelaLogin(){
                         </label>    
                         </S.SenhaEsquerda>
                         <S.SenhaDireita>
-                            <a href="#"> Esqueceu a senha </a>
+                            <a href="http://www.google.com.br"> Esqueceu a senha </a>
                         </S.SenhaDireita>    
                     </S.Senha>
                     <S.SenhaInput>
-                        <input type="password" placeholder="Enter Password"/>
+                        <input 
+                            type="password" 
+                            placeholder="Enter Password"
+                            value={password}
+                            onChange={e => setPassword(e.target.value)}
+                        />
                     </S.SenhaInput>
                     <S.BotaoLogin>
-                        <button> Login </button>
+                        <button onClick={loginHandler}> Login </button>
                     </S.BotaoLogin>
 
                  </form>
