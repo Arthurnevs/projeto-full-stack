@@ -1,20 +1,22 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import * as S from './style';
 import api from '../../services/api'
-import { useNavigate } from 'react-router-dom'
-import { UserContext } from "../../Context/UserContext";
+import { useUserContext } from '../../hooks/useUserContext';
+
 
 
 function TelaLogin(){
 
-    const {userData, setUserData} = useContext()
-
+    const {userData, setUserData} = useUserContext()
 
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
+    //const navigate = useNavigate();
+
     async function loginHandler(e){
         e.preventDefault()
+        
         try{
             const response = await api.post('session',{
                 email,
@@ -22,6 +24,9 @@ function TelaLogin(){
             }) 
         console.log(response.data)
         setUserData({email: response.data.email , isLogged: true})
+
+        //navigate('/dashboard');
+        
         }catch(err){
             alert('Falha no login')
         }

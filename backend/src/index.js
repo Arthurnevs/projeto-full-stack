@@ -8,7 +8,5 @@ const router = require('./Routes/Router')
 
 app.use(router)
 
-require('dotenv').config()
-
 
 app.listen(3333, ()=> console.log('Server online porta 3333'))
