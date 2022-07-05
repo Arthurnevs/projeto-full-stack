@@ -1,19 +1,18 @@
 import React from "react";
-import { BrowserRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 
 import Login from '../views/Login/index';
 import Main from '../views/Main/index';
 
-function Routes(){
+const Rotas = ()=>{
     return(
-        <BrowserRouter>
-            <Switch>
-                <Route path='/' exact component={Login}/>
-                <Route path='/dashboard'exact component={Main}/>
 
-            </Switch>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" caseSensitive={false} element={<Login />} />
+                <Route path="/dashboard" caseSensitive={false} element={<Main />} /></Routes>
         </BrowserRouter>
     )
 }
 
-export default Routes
+export default Rotas

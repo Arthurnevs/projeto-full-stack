@@ -12,8 +12,11 @@ function TelaLogin(){
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
+    //const navigate = useNavigate();
+
     async function loginHandler(e){
         e.preventDefault()
+        
         try{
             const response = await api.post('session',{
                 email,
@@ -21,6 +24,8 @@ function TelaLogin(){
             }) 
         console.log(response.data)
         setUserData({email: response.data.email , isLogged: true})
+
+        //navigate('/dashboard');
         
         }catch(err){
             alert('Falha no login')

@@ -1,14 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Login from './views/Login';
-import { UserContext, UserProvider } from './Context/UserContext';
-import Main from './views/Main';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-      <UserProvider>
-        <Main />
-      </UserProvider>
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );

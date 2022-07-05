@@ -20,7 +20,11 @@ function Cotacoes(){
                         <option value="bt-usd">Bitcoin USD</option>
                     </select>      
                 </S.HeadSection>
-                <S.TableSection> </S.TableSection>
+                <S.TableSection>
+                    
+
+                
+                </S.TableSection>
 
             </S.List>
         </S.Container>

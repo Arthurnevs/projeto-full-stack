@@ -93,4 +93,5 @@ export const HeadSection= styled.div`
 
 export const TableSection= styled.div`
 `
-
+export const HeadList= styled.div`
+`
