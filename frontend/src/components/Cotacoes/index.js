@@ -1,6 +1,9 @@
 import React from "react";
 import * as S from './style';
 import Cards from "../Cards";
+import CardFull from "../CardFull";
+import { Senha } from "../TelaLogin/style";
+
 
 function Cotacoes(){
 
@@ -21,10 +24,18 @@ function Cotacoes(){
                     </select>      
                 </S.HeadSection>
                 <S.TableSection>
-                    
-
-                
+                    <S.Table1> Moeda </S.Table1>
+                    <S.Table2> Minima </S.Table2>
+                    <S.Table3> Maxima </S.Table3>
+                    <S.Table4> Variação </S.Table4>
                 </S.TableSection>
+                <S.Values>
+                    <CardFull/>
+                    <CardFull/>
+                    <CardFull/>
+                    <CardFull/>
+                    
+                </S.Values>
 
             </S.List>
         </S.Container>

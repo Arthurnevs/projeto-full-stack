@@ -3,6 +3,7 @@ import * as S from './style';
 import api from '../../services/api'
 import { useUserContext } from '../../hooks/useUserContext';
 
+import {useNavigate} from 'react-router-dom'
 
 
 function TelaLogin(){
@@ -12,7 +13,7 @@ function TelaLogin(){
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
 
     async function loginHandler(e){
         e.preventDefault()
@@ -25,9 +26,10 @@ function TelaLogin(){
         console.log(response.data)
         setUserData({email: response.data.email , isLogged: true})
 
-        //navigate('/dashboard');
+        navigate('/dashboard');
         
         }catch(err){
+            console.log(err)
             alert('Falha no login')
         }
     }

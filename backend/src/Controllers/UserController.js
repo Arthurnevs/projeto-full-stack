@@ -33,9 +33,9 @@ module.exports = {
                 email,
                 password: hashPassword,
             })
-            return res.status(201).send(createdUser)
+            return res.status(201).json(createdUser)
         } catch(err){
-            return res.status(400).send(err)
+            return res.status(400).json(err)
         }
     }
 }

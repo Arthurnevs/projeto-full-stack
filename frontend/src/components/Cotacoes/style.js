@@ -92,6 +92,40 @@ export const HeadSection= styled.div`
 `
 
 export const TableSection= styled.div`
+    width: 1170px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: -0.04em;
+
+    /* Gray 3 */
+
+    color: #828282;
+    padding-top: 19px;
 `
-export const HeadList= styled.div`
+
+export const Table1= styled.div`
+    width: 347px;
+    height: 30px;
+`
+export const Table2= styled.div`
+    width: 90px;
+    height: 30px;
+`
+export const Table3= styled.div`
+    width: 90px;
+    height: 30px;
+`
+export const Table4= styled.div`
+    width: 90px;
+    height: 30px;
+`
+export const Values= styled.div`
+    width: 1167px;
+    height: 570px;
 `
