@@ -24,5 +24,5 @@ Dentro da pasta front: Rodar o comando -> "npm install axios"
 
 ### Dentro da pasta do backend: Rodar o comando -> "npm run dev" 
 
-### Dentro da pasta do frontend: Rodar o comando -> "yarn start"  
+### Dentro da pasta do frontend: Rodar o comando -> "npm start"  
 
