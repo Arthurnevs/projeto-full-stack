@@ -24,3 +24,10 @@ Dentro da pasta front: Rodar o comando -> "npm install axios"
 
 ### Dentro da pasta do frontend: Rodar o comando -> "npm start"  
 
+
+
+Exemplo de Logine e Senha válido:
+
+email : "arthurziz@hotmail.com"
+password : "123"
+
