@@ -38,6 +38,14 @@ export const Head = styled.div`
     padding-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+
+
+    button{
+        background-color: #FFFF;
+        border: none;
+    }
 
     h3{
         font-family: 'Roboto';
@@ -116,14 +124,27 @@ export const Table1= styled.div`
 export const Table2= styled.div`
     width: 90px;
     height: 30px;
+    button{
+        background-color: #FFFF;
+        border: none;
+    }
 `
 export const Table3= styled.div`
     width: 90px;
     height: 30px;
+    button{
+        background-color: #FFFF;
+        border: none;
+    }
 `
 export const Table4= styled.div`
     width: 90px;
     height: 30px;
+
+    button{
+        background-color: #FFFF;
+        border: none;
+    }
 `
 export const Values= styled.div`
     width: 1167px;

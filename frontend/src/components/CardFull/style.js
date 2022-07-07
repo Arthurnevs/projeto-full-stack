@@ -68,7 +68,7 @@ export const Texto = styled.div`
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
         letter-spacing: -0.04em;
 
@@ -93,14 +93,36 @@ export const Minimo = styled.div`
 
 export const Variacao = styled.div`
     width: 90px;
+    
     display: flex;
     align-items: center;
     //justify-content: center;
 
     .modulo{
+        display: flex;
         align-items: center;
-    justify-content: center;
+        justify-content: center;
+        width: 56px;
+        height: 37px;
+        background: #E0E0E0;
+        border-radius: 8px;
+
+        h4{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            /* identical to box height */
+
+            letter-spacing: -0.04em;
+
+            /* Gray 1 */
+
+            color: #333333;
+        }
     }
+
 `
 
 

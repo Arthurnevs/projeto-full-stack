@@ -25,7 +25,7 @@ function TelaLogin(){
             }) 
         console.log(response.data)
         setUserData({email: response.data.email , isLogged: true})
-
+        
         navigate('/dashboard');
         
         }catch(err){

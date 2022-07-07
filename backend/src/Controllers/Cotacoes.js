@@ -3,17 +3,24 @@ const bit = require('../Service/bit')
 
 function cotacoes(){
     return (api.get().then((response)=>{
-        console.log(parseFloat(response.data[0].bid).toFixed(2))
-        obj = {
-            valor : response.data[0].bid,
-            max : response.data[0].high,
-            min : response.data[0].low,
-            var : response.data[0].varBid
-        };
+        var meuJson = []
+        for(var itens in response.data){
+            const varFormat = parseFloat(response.data[itens].pctChange).toFixed(2)
+            
+            var date =new Date(response.data[itens].timestamp * 1000)
+            dateFormart = (date.toLocaleDateString("pt-BR"))
+            
+            meuJson.push ({
+                "valor" : response.data[itens].bid,
+                "max" : response.data[itens].high,
+                "min" : response.data[itens].low,
+                "var" : varFormat,
+                "dateFormart" : dateFormart
+            })
+        }
 
-        const meuJson = JSON.stringify(obj);
-        console.log(response.meuJson)
-        return response.meuJson
+        response.data = meuJson
+        return response.data
         })  
     )  
 }
@@ -22,7 +29,18 @@ module.exports = {
     async retorno(req,res){
         try{
             const final = await cotacoes()
-            console.log(final)
+            /*
+            function comparer(a,b){
+                if(a.max > b.max){
+                    return -1
+                }
+                if(a.max < b.max){
+                    return 1;
+                }
+                return 0;
+            }
+            final.sort(comparer)
+            */
             return res.status(200).json(final)
 
         }catch(err){
