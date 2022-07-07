@@ -12,8 +12,6 @@ De forma geral, o projeto está bem parecido com o que foi pré estabelecido no 
 O desenvolvimento desse projeto foi bastante desafiador, pois nunca tinha tido uma experiência tão completa, e fui obtendo diversos conhecimentos a medida que ia fazendo o projeto. Sem dúvidas foi uma experiência que vai agregar bastante para o meu futuro, estou com muita vontade de aprender mais sobre o desenvolvimento de projetos em geral. Foi muito gratificante (apesar de não ter concluído 100% do desafio) ver o que consegui fazer.
 
 # Instruções para rodar o projeto
-Para rodar o projeto é necessário ter o NodeJS, o React e o MongoDB instalados
-
 
 ### Dentro da pasta do backend: Rodar o comando -> "npm install" 
 
