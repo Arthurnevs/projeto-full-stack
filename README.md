@@ -19,6 +19,8 @@ Para rodar o projeto é necessário ter o NodeJS, o React e o MongoDB instalados
 
 ### Dentro da pasta do front: Rodar o comando -> "npm install" 
 
+### Dentro da pasta front: Rodar o comando -> "npm install axios"
+
 ### Dentro da pasta do backend: Rodar o comando -> "npm run dev" 
 
 ### Dentro da pasta do frontend: Rodar o comando -> "yarn start"  
