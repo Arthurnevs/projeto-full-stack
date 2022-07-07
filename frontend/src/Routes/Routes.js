@@ -10,7 +10,8 @@ const Rotas = ()=>{
         <BrowserRouter>
             <Routes>
                 <Route path="/" caseSensitive={false} element={<Login />} />
-                <Route path="/dashboard" caseSensitive={false} element={<Main />} /></Routes>
+                <Route path="/dashboard" caseSensitive={false} element={<Main />} />
+            </Routes>
         </BrowserRouter>
     )
 }
