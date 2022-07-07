@@ -19,7 +19,8 @@ Para rodar o projeto é necessário ter o NodeJS, o React e o MongoDB instalados
 
 ### Dentro da pasta do front: Rodar o comando -> "npm install" 
 
-### Dentro da pasta front: Rodar o comando -> "npm install axios"
+Obs: (Ao tentar rodar o projeto em outro computador, obtive um erro com a instalação do AXIOS, mesmo ele estando nas dependencias do frontend, o mesmo não foi instalado, caso ocorra novamente) -> Rodar o comando: 
+Dentro da pasta front: Rodar o comando -> "npm install axios"
 
 ### Dentro da pasta do backend: Rodar o comando -> "npm run dev" 
 
