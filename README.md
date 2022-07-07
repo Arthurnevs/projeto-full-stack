@@ -7,7 +7,7 @@ Na parte de login, temos uma validação de dados com email e senha, onde para t
 
 Na segunda tela(dashboard), foram apresentadas as cotações atuais em 3 cards principais, mostrando o valor e um identificador da moeda cotada. Além disso, na seção inferior é apresentado as últimas cotações da moeda "Dolar Americano" de forma mais detalhada, descrevendo Data da cotação, minimo, máximo e variação. Com a opção de refresh, pegando os dados atualizados fornecidos pela API.
 
-De forma geral, o projeto está bem parecido com o que foi pré estabelecido no figma. 
+De forma geral, o projeto está bem parecido com o que foi pré estabelecido no figma. Tentei buscar meios para facilitar a estilização das páginas, porém creio ter tido um pouco de dificuldade quanto a responsividade do site. Realizei testes em 2 telas com dimensôes diferentes, e verifiquei que poderia estar bem melhor. 
 
 O desenvolvimento desse projeto foi bastante desafiador, pois nunca tinha tido uma experiência tão completa, e fui obtendo diversos conhecimentos a medida que ia fazendo o projeto. Sem dúvidas foi uma experiência que vai agregar bastante para o meu futuro, estou com muita vontade de aprender mais sobre o desenvolvimento de projetos em geral. Foi muito gratificante (apesar de não ter concluído 100% do desafio) ver o que consegui fazer.
 
